@@ -1,0 +1,5 @@
+{
+  "elixirLS.projectDir": "./ch07/persistable_todo_cache",
+  "cSpell.words": ["dbfolder", "erlang"],
+  "cSpell.enableFiletypes": ["!elixir"]
+}
