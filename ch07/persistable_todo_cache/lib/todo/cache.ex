@@ -10,7 +10,7 @@ defmodule Todo.Cache do
   end
 
   def init(_) do
-    Todo.Database.start()
+    Todo.Database.start(3)
     {:ok, %{}}
   end
 
