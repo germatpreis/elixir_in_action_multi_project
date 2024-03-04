@@ -26,6 +26,8 @@ defmodule Todo.DatabaseWorker do
     |> file_name(key)
     |> File.write!(:erlang.term_to_binary(data))
 
+    IO.inspect("#{inspect(self())}: storing #{inspect(key)}")
+
     {:noreply, state}
   end
 
@@ -36,6 +38,8 @@ defmodule Todo.DatabaseWorker do
         {:ok, contents} -> :erlang.binary_to_term(contents)
         _ -> nil
       end
+
+    IO.inspect("#{inspect(self())}: fetching #{inspect(key)}")
 
     {:reply, data, state}
   end
