@@ -1,5 +1,5 @@
 {
-  "elixirLS.projectDir": "./ch07/persistable_todo_cache",
+  "elixirLS.projectDir": "./ch09/supervise_database",
   "cSpell.words": ["dbfolder", "erlang"],
   "cSpell.enableFiletypes": ["!elixir"]
 }
